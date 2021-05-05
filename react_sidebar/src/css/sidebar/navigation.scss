@@ -1,0 +1,73 @@
+
+aside {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    height: 100vh;
+    overflow-y: auto;
+    width: 17.8rem;
+    padding: 1rem;
+    border-right: 1px solid #AAA;
+
+    .user {
+        margin-top: 1rem;
+    }
+
+    #logo {
+        width: 50%;
+        height: 20rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+
+    }
+
+    li{
+        box-sizing: border-box;
+        border-radius: 10px;
+        width: 100%;
+        padding: .5rem 1rem;
+
+        img {
+            height: 1.5rem;
+        }
+
+        p {
+            display: inline-block;
+            margin-left: 1rem;
+            margin-bottom: .5rem;
+            vertical-align: middle;
+        }
+        
+        &:hover {
+            background-color: #DDD;
+            cursor: pointer;
+        }
+    }
+
+
+    .logout {
+        bottom: .3rem;
+        left: .7rem;
+        padding: .5rem 0;
+        position: absolute;
+
+        p {
+            display: inline-block;
+            margin-left: 1rem;
+            vertical-align: top;
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    
+}

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a:link {
+  color: initial;
+  text-decoration: none; }
+
+a:visited {
+  color: initial; }
+
+aside {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4rem;
+  height: 100vh;
+  overflow-y: auto;
+  width: 17.8rem;
+  padding: 1rem;
+  border-right: 1px solid #AAA; }
+  aside .user {
+    margin-top: 1rem; }
+  aside #logo {
+    width: 50%;
+    height: 20rem; }
+    aside #logo img {
+      width: 100%; }
+  aside nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem; }
+  aside li {
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100%;
+    padding: .5rem 1rem; }
+    aside li img {
+      height: 1.5rem; }
+    aside li p {
+      display: inline-block;
+      margin-left: 1rem;
+      margin-bottom: .5rem;
+      vertical-align: middle; }
+    aside li:hover {
+      background-color: #DDD;
+      cursor: pointer; }
+  aside .logout {
+    bottom: .3rem;
+    left: .7rem;
+    padding: .5rem 0;
+    position: absolute; }
+    aside .logout p {
+      display: inline-block;
+      margin-left: 1rem;
+      vertical-align: top; }
+    aside .logout:hover {
+      cursor: pointer; }
+
+/*# sourceMappingURL=styles.css.map */
