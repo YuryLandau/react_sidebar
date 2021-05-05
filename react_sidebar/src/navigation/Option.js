@@ -1,8 +1,8 @@
 function Option(props){
     return (
         <li>
-            <img src={props.image} alt=""/>
-            <p href="#" className="option">
+            <p>
+
                 {props.value}
             </p>
         </li>

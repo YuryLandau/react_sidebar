@@ -22,6 +22,11 @@ aside {
   border-right: 1px solid #AAA; }
   aside .user {
     margin-top: 1rem; }
+    aside .user .iniciais {
+      width: 4rem;
+      height: 4rem;
+      background-color: blue;
+      border-radius: 100%; }
   aside #logo {
     width: 50%;
     height: 20rem; }
@@ -35,21 +40,43 @@ aside {
     box-sizing: border-box;
     border-radius: 10px;
     width: 100%;
-    padding: .5rem 1rem; }
-    aside li img {
-      height: 1.5rem; }
+    padding: .8rem 3.5rem;
+    padding-left: 1rem;
+    color: #000; }
     aside li p {
-      display: inline-block;
-      margin-left: 1rem;
-      margin-bottom: .5rem;
-      vertical-align: middle; }
+      box-sizing: border-box;
+      background-size: 2rem;
+      background-repeat: no-repeat;
+      background-position: left center;
+      filter: invert(63%) sepia(7%) saturate(555%) hue-rotate(177deg) brightness(85%) contrast(88%);
+      line-height: 2rem;
+      height: 100%;
+      padding-left: 2.5rem; }
+    aside li:nth-child(1) p {
+      background-image: url("/src/img/dashboard.svg"); }
+    aside li:nth-child(2) p {
+      background-image: url("/src/img/trades.svg"); }
+    aside li:nth-child(3) p {
+      background-image: url("/src/img/organizations.svg"); }
+    aside li:nth-child(4) p {
+      background-image: url("/src/img/users.svg"); }
+    aside li:nth-child(5) p {
+      background-image: url("/src/img/settings.svg"); }
     aside li:hover {
-      background-color: #DDD;
-      cursor: pointer; }
+      cursor: pointer;
+      background-color: #f2f4f8; }
+      aside li:hover p {
+        filter: invert(12%) sepia(79%) saturate(2736%) hue-rotate(204deg) brightness(95%) contrast(103%);
+        color: #000000 !important; }
   aside .logout {
+    background-image: url("/src/img/logout.svg");
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: .7rem center;
+    color: #000000AA;
     bottom: .3rem;
-    left: .7rem;
-    padding: .5rem 0;
+    left: .3rem;
+    padding: .5rem 3.5rem;
     position: absolute; }
     aside .logout p {
       display: inline-block;

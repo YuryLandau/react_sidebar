@@ -1,8 +1,8 @@
 import Option from './navigation/Option';
-import UserName from './navigation/UserName';
 import Logo from '../src/img/Logo.svg';
 import icones from './Icons';
-import usuario from './Usuario';
+import usuario from './usuario/Usuario';
+import UserName from './usuario/UserName';
 
 function Sidebar(){
     return (
@@ -22,10 +22,7 @@ function Sidebar(){
             <Option value="Rate Settings" image={icones.settings}/>
         </nav>
         <div className="logout">
-            <img src={icones.logout} alt=""/>
-            <p href="#" className="option">
-                Logout
-            </p>
+        Logout
         </div>
         </aside>
         );

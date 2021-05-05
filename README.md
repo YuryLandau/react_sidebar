@@ -1,4 +1,5 @@
 # react_sidebar
 Pequeno teste em React
 
-``yarn start`` to start the project
+## O que falta
+- Dropdown na opção de Rate Settings
