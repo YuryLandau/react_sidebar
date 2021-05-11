@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 import Option from './navigation/Option';
 import Logo from '../src/img/Logo.svg';
@@ -6,7 +6,7 @@ import usuario from './usuario/Usuario';
 import UserName from './usuario/UserName';
 import scripts from './Scripts';
 
-const [desce, menuDrop] = useState("none");
+// const [desce, menuDrop] = useState("none");
 
 function Sidebar(){
     return (
