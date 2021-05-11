@@ -1,8 +1,11 @@
 function Option(props){
-    return (
-        <li>
-            <p>
 
+    const novoScript = new Function ('return ' + props.script )
+    console.log(novoScript);
+
+    return (
+        <li onClick={novoScript()}>
+            <p>
                 {props.value}
             </p>
         </li>

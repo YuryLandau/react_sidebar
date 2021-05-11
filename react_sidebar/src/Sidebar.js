@@ -1,4 +1,4 @@
-// import React, { useState } from "react";
+import React, { useState } from "react";
 
 import Option from './navigation/Option';
 import Logo from '../src/img/Logo.svg';
@@ -6,7 +6,7 @@ import usuario from './usuario/Usuario';
 import UserName from './usuario/UserName';
 import scripts from './Scripts';
 
-// const [desce, menuDropdown] = useState("none");
+const [desce, menuDrop] = useState("none");
 
 function Sidebar(){
     return (
@@ -20,11 +20,11 @@ function Sidebar(){
         
         <nav>
             <ul>
-                <Option script={scripts.empty} value="Dashboard"/>
+                <Option script={scripts.empty} value="Dashbdasoard"/>
                 <Option script={scripts.empty} value="Trades"/>
                 <Option script={scripts.empty} value="Organizations"/>
                 <Option script={scripts.empty} value="Users"/>
-                <Option script={scripts.menuDropdown} value="Rate Settings"/>
+                <Option script={menuDrop(desce = "block")} value="Rate Settings"/>
             </ul>
             
             <nav id="settings" className="settings_NotDisplay">
