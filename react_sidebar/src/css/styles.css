@@ -17,72 +17,101 @@ aside {
   font-size: 1.4rem;
   height: 100vh;
   overflow-y: auto;
-  width: 17.8rem;
+  width: 19rem;
   padding: 1rem;
+  padding-top: 2rem;
   border-right: 1px solid #AAA; }
-  aside .user {
-    margin-top: 1rem; }
-    aside .user .iniciais {
-      width: 4rem;
-      height: 4rem;
-      background-color: blue;
-      border-radius: 100%; }
   aside #logo {
     width: 50%;
-    height: 20rem; }
+    height: 20rem;
+    padding-left: .5rem; }
     aside #logo img {
-      width: 100%; }
+      width: 60%; }
+  aside .user {
+    box-sizing: border-box;
+    display: flex;
+    padding: 1rem;
+    margin: 5% 0; }
+    aside .user .iniciais {
+      box-sizing: border-box;
+      background-color: #F2F8F4;
+      border-radius: 100%;
+      border: 5px solid #FCFDFC;
+      color: #052e17AA;
+      filter: drop-shadow(0 3px 1px #c9c9c9);
+      font-weight: bold;
+      padding: 1rem 1rem;
+      vertical-align: middle; }
+    aside .user .infos {
+      padding-top: 1rem;
+      padding-left: .5rem; }
+      aside .user .infos .cargo {
+        color: #AAA;
+        font-size: 1rem; }
+      aside .user .infos .user_name {
+        color: #054e17;
+        font-weight: bold; }
   aside nav {
     display: flex;
-    flex-direction: column;
-    margin-top: 3rem; }
-  aside li {
-    box-sizing: border-box;
-    border-radius: 10px;
-    width: 100%;
-    padding: .8rem 3.5rem;
-    padding-left: 1rem;
-    color: #000; }
-    aside li p {
+    flex-direction: column; }
+    aside nav li {
       box-sizing: border-box;
-      background-size: 2rem;
-      background-repeat: no-repeat;
-      background-position: left center;
-      filter: invert(63%) sepia(7%) saturate(555%) hue-rotate(177deg) brightness(85%) contrast(88%);
-      line-height: 2rem;
-      height: 100%;
-      padding-left: 2.5rem; }
-    aside li:nth-child(1) p {
-      background-image: url("/src/img/dashboard.svg"); }
-    aside li:nth-child(2) p {
-      background-image: url("/src/img/trades.svg"); }
-    aside li:nth-child(3) p {
-      background-image: url("/src/img/organizations.svg"); }
-    aside li:nth-child(4) p {
-      background-image: url("/src/img/users.svg"); }
-    aside li:nth-child(5) p {
-      background-image: url("/src/img/settings.svg"); }
-    aside li:hover {
-      cursor: pointer;
-      background-color: #f2f4f8; }
-      aside li:hover p {
-        filter: invert(12%) sepia(79%) saturate(2736%) hue-rotate(204deg) brightness(95%) contrast(103%);
-        color: #000000 !important; }
+      border-radius: 10px;
+      width: 100%;
+      padding: .8rem 3.5rem;
+      padding-left: 1rem;
+      color: #000; }
+      aside nav li p {
+        box-sizing: border-box;
+        background-size: 2rem;
+        background-repeat: no-repeat;
+        background-position: left center;
+        filter: invert(63%) sepia(7%) saturate(555%) hue-rotate(177deg) brightness(85%) contrast(88%);
+        line-height: 2rem;
+        line-break: strict;
+        height: 100%;
+        padding-left: 2.5rem;
+        white-space: nowrap; }
+      aside nav li:nth-child(1) p {
+        background-image: url("/src/img/dashboard.svg"); }
+      aside nav li:nth-child(2) p {
+        background-image: url("/src/img/trades.svg"); }
+      aside nav li:nth-child(3) p {
+        background-image: url("/src/img/organizations.svg"); }
+      aside nav li:nth-child(4) p {
+        background-image: url("/src/img/users.svg"); }
+      aside nav li:nth-child(5) p {
+        background-image: url("/src/img/settings.svg"); }
+      aside nav li:hover {
+        cursor: pointer;
+        background-color: #f2f4f8; }
+        aside nav li:hover p {
+          filter: invert(13%) sepia(29%) saturate(1166%) hue-rotate(94deg) brightness(96%) contrast(98%); }
+    aside nav #settings li {
+      font-size: 1.1rem; }
+      aside nav #settings li:nth-child(1) p {
+        background-image: url("/src/img/opcao.svg"); }
+      aside nav #settings li:nth-child(2) p {
+        background-image: url("/src/img/opcao.svg"); }
+      aside nav #settings li:nth-child(3) p {
+        background-image: url("/src/img/opcao.svg"); }
+    aside nav .settings_display {
+      display: block; }
+    aside nav .settings_NotDisplay {
+      display: none; }
   aside .logout {
     background-image: url("/src/img/logout.svg");
     background-size: 2rem;
     background-repeat: no-repeat;
     background-position: .7rem center;
-    color: #000000AA;
     bottom: .3rem;
+    filter: invert(63%) sepia(7%) saturate(555%) hue-rotate(177deg) brightness(85%) contrast(88%);
     left: .3rem;
-    padding: .5rem 3.5rem;
+    padding: .8rem;
+    padding-left: 3.1rem;
     position: absolute; }
-    aside .logout p {
-      display: inline-block;
-      margin-left: 1rem;
-      vertical-align: top; }
     aside .logout:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      filter: invert(13%) sepia(29%) saturate(1166%) hue-rotate(94deg) brightness(96%) contrast(98%); }
 
 /*# sourceMappingURL=styles.css.map */

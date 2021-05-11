@@ -5,93 +5,150 @@ aside {
     font-size: 1.4rem;
     height: 100vh;
     overflow-y: auto;
-    width: 17.8rem;
+    width: 19rem;
     padding: 1rem;
-    border-right: 1px solid #AAA;
-
-
-    .user {
-        margin-top: 1rem;
-
-        .iniciais {
-            width: 4rem;
-            height: 4rem;
-            background-color: blue;
-            border-radius: 100%;
-        }
-    }
+    padding-top: 2rem;
+    border-right: 1px solid $navigation-cor-border_right;
 
     #logo {
         width: 50%;
         height: 20rem;
+        padding-left: .5rem;
 
         img {
-            width: 100%;
+            width: 60%;
         }
+    }
+
+    .user {
+        box-sizing: border-box;
+        display: flex;
+        padding: 1rem;
+        margin: 5% 0;
+
+        .iniciais {
+            box-sizing: border-box;
+            background-color: $navigation-cor-userinicials-background;
+            border-radius: 100%;
+            border: 5px solid $navigation-cor-userinicials-border;
+            color: $navigation-cor-userinicials;
+            filter: drop-shadow(0 3px 1px #c9c9c9);
+            font-weight: bold;
+            padding: 1rem 1rem;
+            vertical-align: middle;
+        }
+
+        .infos{
+
+            padding-top: 1rem;
+            padding-left: .5rem;
+
+            .cargo {
+                color: $navigation-cor-usercargo-font;
+                font-size: 1rem;
+            }
+
+            .user_name {
+                color: $navigation-cor-username;
+                font-weight: bold;
+            }
+        }
+
+
     }
 
     nav {
         display: flex;
         flex-direction: column;
-        margin-top: 3rem;
 
-    }
-
-    li{
-        
-        box-sizing: border-box;
-        border-radius: 10px;
-        width: 100%;
-        padding: .8rem 3.5rem;
-        padding-left: 1rem;
-        color: #000;
-        
-        p {
+        li{
+            
             box-sizing: border-box;
-            background-size: 2rem;
-            background-repeat: no-repeat;
-            background-position: left center;
-            filter: invert(63%) sepia(7%) saturate(555%) hue-rotate(177deg) brightness(85%) contrast(88%);
-            line-height: 2rem;
-            height: 100%;
-            padding-left: 2.5rem;
-        }
-
-        &:nth-child(1){
-            p {
-                background-image: url('/src/img/dashboard.svg');
-            }
-        }
-        &:nth-child(2){
-            p {
-                background-image: url('/src/img/trades.svg');
-            }
-        }
-        &:nth-child(3){
-            p {
-                background-image: url('/src/img/organizations.svg');
-            }
-        }
-        &:nth-child(4){
-            p {
-                background-image: url('/src/img/users.svg');
-            }
-        }
-        &:nth-child(5){
-            p {
-                background-image: url('/src/img/settings.svg');
-            }
-        }
-        
-        &:hover {
-            cursor: pointer;
-            background-color: $navigation-cor-background-hover;
+            border-radius: 10px;
+            width: 100%;
+            padding: .8rem 3.5rem;
+            padding-left: 1rem;
+            color: #000;
             
             p {
-                filter: invert(12%) sepia(79%) saturate(2736%) hue-rotate(204deg) brightness(95%) contrast(103%);
-                color: #000000 !important;
+                box-sizing: border-box;
+                background-size: 2rem;
+                background-repeat: no-repeat;
+                background-position: left center;
+                filter: invert(63%) sepia(7%) saturate(555%) hue-rotate(177deg) brightness(85%) contrast(88%);
+                line-height: 2rem;
+                line-break: strict;
+                height: 100%;
+                padding-left: 2.5rem;
+                white-space: nowrap;
             }
-        }        
+
+            &:nth-child(1){
+                p {
+                    background-image: url('/src/img/dashboard.svg');
+                }
+            }
+            &:nth-child(2){
+                p {
+                    background-image: url('/src/img/trades.svg');
+                }
+            }
+            &:nth-child(3){
+                p {
+                    background-image: url('/src/img/organizations.svg');
+                }
+            }
+            &:nth-child(4){
+                p {
+                    background-image: url('/src/img/users.svg');
+                }
+            }
+            &:nth-child(5){
+                p {
+                    background-image: url('/src/img/settings.svg');
+                }
+            }
+            
+            &:hover {
+                cursor: pointer;
+                background-color: $navigation-cor-background-hover;
+                
+                p {
+                    filter: invert(13%) sepia(29%) saturate(1166%) hue-rotate(94deg) brightness(96%) contrast(98%);
+
+                }
+            }        
+        }
+
+        #settings {
+
+            li {
+                font-size: $navigation-fontsize-submenu;
+
+                &:nth-child(1){
+                    p {
+                        background-image: url('/src/img/opcao.svg');
+                    }
+                }
+                &:nth-child(2){
+                    p {
+                        background-image: url('/src/img/opcao.svg');
+                    }
+                }
+                &:nth-child(3){
+                    p {
+                        background-image: url('/src/img/opcao.svg');
+                    }
+                }
+            }
+        }
+
+        .settings_display {
+            display: block;
+        }
+        .settings_NotDisplay {
+            display: none;
+        }
     }
 
 
@@ -100,23 +157,17 @@ aside {
         background-size: 2rem;
         background-repeat: no-repeat;
         background-position: .7rem center;
-
-        color: #000000AA;
-
         bottom: .3rem;
+        filter: invert(63%) sepia(7%) saturate(555%) hue-rotate(177deg) brightness(85%) contrast(88%);
         left: .3rem;
-        padding: .5rem 3.5rem;
+        padding: .8rem;
+        padding-left:  3.1rem;
         position: absolute;
-
-        p {
-            display: inline-block;
-            margin-left: 1rem;
-            vertical-align: top;
-        }
 
         &:hover{
             cursor: pointer;
-           
+            filter: invert(13%) sepia(29%) saturate(1166%) hue-rotate(94deg) brightness(96%) contrast(98%);
+
         }
     }
     
